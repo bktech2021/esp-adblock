@@ -1,6 +1,8 @@
 #include <ESP8266WiFi.h>
 #include "DNSServer.h"
 #include <ESP8266WebServer.h>
+#define SSID "YOUR_SSID"
+#define PASS "YOUR_PASS"
 
 const byte DNS_PORT = 53;
 IPAddress adIP(0, 0, 0, 0);
@@ -15,9 +17,9 @@ void setup() {
   pinMode(2, OUTPUT);
   Serial.println();
   Serial.print("Connecting to: ");
-  Serial.println("TTNET_ZTE_2NPS");
+  Serial.println(SSID);
 
-  WiFi.begin("TTNET_ZTE_2NPS", "mJmZuN6Uwq");
+  WiFi.begin(SSID, PASS);
 
   while (WiFi.status() != WL_CONNECTED) {
     delay(250);
