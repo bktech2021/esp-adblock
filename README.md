@@ -1,7 +1,7 @@
 # esp-adblock
 Host blocker for ESP8266 board. Uses [rufbi's modified files](https://github.com/rubfi/esphole)
 # Installation
-Open up main.ino in Arduino and upload the sketch.
+Open up esp-adblock.ino in Arduino and upload the sketch.
 Change SSID and PASS to your credentials.
 # Status LED
 - Blinking every 250ms:
